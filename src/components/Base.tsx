@@ -1,7 +1,7 @@
-import React from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
-import { useAppDispatch, useAppSelector } from "../app/hooks";
-import { decrement, increment } from "../features/counter/counter";
+import React from 'react';
+import {StyleSheet, Text, View, Button} from 'react-native';
+import {useAppDispatch, useAppSelector} from '../app/hooks';
+import {decrement, increment} from '../features/counter/counter';
 
 const Base = () => {
   const count = useAppSelector((state) => state.counter.count);
@@ -35,24 +35,24 @@ const Base = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   count: {
     fontSize: 20,
   },
   counterView: {
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   buttonContainer: {
-    flexDirection: "row",
-    justifyContent: "space-around",
+    flexDirection: 'row',
+    justifyContent: 'space-around',
   },
   button: {
     fontSize: 16,
-    width: "20%",
+    width: '20%',
     marginHorizontal: 10,
     marginTop: 20,
   },
