@@ -1,7 +1,8 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button} from 'react-native';
-import {useAppDispatch, useAppSelector} from '../app/hooks';
-import {decrement, increment} from '../features/counter/counter';
+import { StyleSheet, Text, View, Button } from 'react-native';
+
+import { useAppDispatch, useAppSelector } from '../app/hooks';
+import { decrement, increment } from '../features/counter/counter';
 
 const Base = () => {
   const count = useAppSelector((state) => state.counter.count);
