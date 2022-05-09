@@ -1,6 +1,6 @@
 const expoPreset = require('jest-expo/jest-preset');
 
-import type {Config} from '@jest/types';
+import type { Config } from '@jest/types';
 
 process.env.TZ = 'Asia/Seoul';
 
@@ -17,7 +17,7 @@ export default async (): Promise<Config.InitialOptions> => {
     testMatch: ['**/__tests__/**/*.ts?(x)', '**/?(*.)+(spec|test).ts?(x)'],
     moduleFileExtensions: ['js', 'ts', 'tsx', 'svg', 'png', 'json'],
     globals: {
-      'ts-jest': {tsconfig: 'tsconfig.spec.json'},
+      'ts-jest': { tsconfig: 'tsconfig.spec.json' },
     },
     modulePathIgnorePatterns: [
       '<rootDir>/node_modules/',

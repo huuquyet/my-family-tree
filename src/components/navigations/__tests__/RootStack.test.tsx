@@ -1,6 +1,6 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import 'react-native';
-import renderer, { act } from 'react-test-renderer';
+import * as renderer from 'react-test-renderer';
 
 import StackNavigator from '../RootStack';
 import { createTestElement, createTestProps } from '../../../../test/testUtils';
@@ -18,7 +18,7 @@ describe('[Stack] navigator', () => {
   it('should renders without crashing', async () => {
     const rendered = renderer.create(component).toJSON();
 
-    await act(async () => {
+    await renderer.act(async () => {
       expect(rendered).toMatchSnapshot();
     });
 
@@ -30,7 +30,7 @@ describe('[Stack] navigator', () => {
 
     const rendered = renderer.create(component).toJSON();
 
-    await act(async () => {
+    await renderer.act(async () => {
       expect(rendered).toMatchSnapshot();
     });
 

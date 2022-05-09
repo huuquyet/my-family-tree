@@ -1,6 +1,6 @@
-import {ConfigContext, ExpoConfig} from '@expo/config';
+import { ConfigContext, ExpoConfig } from '@expo/config';
 
-export default ({config}: ConfigContext): ExpoConfig => ({
+export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name: 'my-family-tree',
   slug: 'my-family-tree-expo',

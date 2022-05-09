@@ -1,7 +1,7 @@
-import React from 'react';
+import * as React from 'react';
 import 'react-native';
 import { Button } from 'dooboo-ui';
-import renderer from 'react-test-renderer';
+import * as renderer from 'react-test-renderer';
 import {
   act,
   fireEvent,

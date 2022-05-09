@@ -181,7 +181,6 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
     >
       <Text
         allowFontScaling={false}
-        selectable={false}
         style={
           Array [
             Object {

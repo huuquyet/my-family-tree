@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import 'react-native';
 import { render, RenderAPI } from '@testing-library/react-native';
 

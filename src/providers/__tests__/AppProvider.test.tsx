@@ -1,6 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 import { Button, Text, View } from 'react-native';
-import renderer from 'react-test-renderer';
+import { ReactTestRendererJSON } from 'react-test-renderer';
 import {
   act,
   fireEvent,
@@ -37,7 +37,7 @@ const FakeChild = (): React.ReactElement => {
 };
 
 describe('[AppProvider] rendering test', () => {
-  let json: renderer.ReactTestRendererJSON;
+  let json: ReactTestRendererJSON[] | ReactTestRendererJSON;
 
   const component = (
     <AppProvider>

@@ -1,3 +1,2 @@
-src/types/graphql.tsx
 **/*.js
 # **/*/__tests__/**/*

@@ -1,6 +1,6 @@
-import React, {ReactElement} from 'react';
+import { ReactElement } from 'react';
 import 'react-native';
-import {ThemeType} from 'dooboo-ui';
+import { ThemeType } from 'dooboo-ui';
 
 import RootProvider from '../src/providers';
 
