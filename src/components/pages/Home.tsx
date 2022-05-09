@@ -1,6 +1,7 @@
-import {FC} from 'react';
-import {RootStackNavigationProps} from '../navigations/RootStack';
+import { FC } from 'react';
 import styled from '@emotion/native';
+
+import { RootStackNavigationProps } from '../navigations/RootStack';
 
 const Container = styled.View`
   flex: 1;
@@ -12,7 +13,7 @@ const Container = styled.View`
 
 const StyledText = styled.Text`
   font-size: 16px;
-  color: ${({theme}) => theme.text};
+  color: ${({ theme }) => theme.text};
 `;
 
 interface Props {

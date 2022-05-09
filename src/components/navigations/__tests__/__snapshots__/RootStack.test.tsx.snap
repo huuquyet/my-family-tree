@@ -40,6 +40,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
       >
         <RNSScreen
           activityState={2}
+          collapsable={false}
           forwardedRef={[Function]}
           pointerEvents="box-none"
           style={
@@ -115,6 +116,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
             }
           >
             <View
+              collapsable={false}
               pointerEvents="box-none"
               style={
                 Object {
@@ -125,6 +127,8 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
               <View
                 collapsable={false}
                 forwardedRef={[Function]}
+                handlerTag={2}
+                handlerType="PanGestureHandler"
                 needsOffscreenAlphaCompositing={false}
                 onGestureHandlerEvent={[Function]}
                 onGestureHandlerStateChange={[Function]}
@@ -218,9 +222,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                                 },
                               ]
                             }
-                          >
-                            
-                          </Text>
+                          />
                           <Text
                             style={
                               Array [
@@ -232,9 +234,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                                 undefined,
                               ]
                             }
-                          >
-                            
-                          </Text>
+                          />
                           <Text
                             style={
                               Array [
@@ -246,9 +246,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                                 undefined,
                               ]
                             }
-                          >
-                            
-                          </Text>
+                          />
                         </View>
                         <View
                           style={
@@ -265,7 +263,13 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                           }
                         >
                           <View
+                            accessibilityState={
+                              Object {
+                                "disabled": false,
+                              }
+                            }
                             accessible={true}
+                            collapsable={false}
                             focusable={true}
                             onClick={[Function]}
                             onResponderGrant={[Function]}
@@ -361,7 +365,13 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                             }
                           />
                           <View
+                            accessibilityState={
+                              Object {
+                                "disabled": false,
+                              }
+                            }
                             accessible={true}
+                            collapsable={false}
                             focusable={true}
                             onClick={[Function]}
                             onResponderGrant={[Function]}
@@ -442,7 +452,13 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                             }
                           />
                           <View
+                            accessibilityState={
+                              Object {
+                                "disabled": false,
+                              }
+                            }
                             accessible={true}
+                            collapsable={false}
                             focusable={true}
                             onClick={[Function]}
                             onResponderGrant={[Function]}
@@ -519,6 +535,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                       </View>
                     </View>
                     <View
+                      collapsable={false}
                       pointerEvents="box-none"
                       style={Object {}}
                     >
@@ -530,6 +547,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                         style={null}
                       >
                         <View
+                          collapsable={false}
                           pointerEvents="box-none"
                           style={
                             Object {
@@ -543,6 +561,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                           }
                         >
                           <View
+                            collapsable={false}
                             style={
                               Object {
                                 "backgroundColor": "black",
@@ -560,6 +579,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                           />
                         </View>
                         <View
+                          collapsable={false}
                           pointerEvents="box-none"
                           style={
                             Object {
@@ -590,6 +610,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                             }
                           >
                             <View
+                              collapsable={false}
                               pointerEvents="box-none"
                               style={
                                 Object {
@@ -602,6 +623,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                               }
                             />
                             <View
+                              collapsable={false}
                               pointerEvents="box-none"
                               style={
                                 Object {
@@ -614,6 +636,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                               <Text
                                 accessibilityRole="header"
                                 aria-level="1"
+                                collapsable={false}
                                 numberOfLines={1}
                                 onLayout={[Function]}
                                 style={
@@ -628,6 +651,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                               </Text>
                             </View>
                             <View
+                              collapsable={false}
                               pointerEvents="box-none"
                               style={
                                 Object {
@@ -651,6 +675,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
         </RNSScreen>
       </RNSScreenContainer>
       <View
+        collapsable={false}
         pointerEvents="box-none"
         style={
           Object {
@@ -699,6 +724,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
       }
     >
       <View
+        collapsable={false}
         pointerEvents="box-none"
         style={
           Object {
@@ -714,6 +740,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
           style={null}
         >
           <View
+            collapsable={false}
             pointerEvents="box-none"
             style={
               Object {
@@ -728,6 +755,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
             }
           >
             <View
+              collapsable={false}
               style={
                 Object {
                   "backgroundColor": "white",
@@ -745,6 +773,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
             />
           </View>
           <View
+            collapsable={false}
             pointerEvents="box-none"
             style={
               Object {
@@ -775,6 +804,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
               }
             >
               <View
+                collapsable={false}
                 pointerEvents="box-none"
                 style={
                   Object {
@@ -788,6 +818,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                 }
               />
               <View
+                collapsable={false}
                 pointerEvents="box-none"
                 style={
                   Object {
@@ -801,6 +832,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                 <Text
                   accessibilityRole="header"
                   aria-level="1"
+                  collapsable={false}
                   numberOfLines={1}
                   onLayout={[Function]}
                   style={
@@ -815,6 +847,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                 </Text>
               </View>
               <View
+                collapsable={false}
                 pointerEvents="box-none"
                 style={
                   Object {
@@ -841,6 +874,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
       >
         <RNSScreen
           activityState={2}
+          collapsable={false}
           forwardedRef={[Function]}
           pointerEvents="box-none"
           style={
@@ -916,6 +950,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
             }
           >
             <View
+              collapsable={false}
               pointerEvents="box-none"
               style={
                 Object {
@@ -926,6 +961,8 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
               <View
                 collapsable={false}
                 forwardedRef={[Function]}
+                handlerTag={1}
+                handlerType="PanGestureHandler"
                 needsOffscreenAlphaCompositing={false}
                 onGestureHandlerEvent={[Function]}
                 onGestureHandlerStateChange={[Function]}
@@ -1019,9 +1056,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                                 },
                               ]
                             }
-                          >
-                            
-                          </Text>
+                          />
                           <Text
                             style={
                               Array [
@@ -1033,9 +1068,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                                 undefined,
                               ]
                             }
-                          >
-                            
-                          </Text>
+                          />
                           <Text
                             style={
                               Array [
@@ -1047,9 +1080,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                                 undefined,
                               ]
                             }
-                          >
-                            
-                          </Text>
+                          />
                         </View>
                         <View
                           style={
@@ -1066,7 +1097,13 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                           }
                         >
                           <View
+                            accessibilityState={
+                              Object {
+                                "disabled": false,
+                              }
+                            }
                             accessible={true}
+                            collapsable={false}
                             focusable={true}
                             onClick={[Function]}
                             onResponderGrant={[Function]}
@@ -1162,7 +1199,13 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                             }
                           />
                           <View
+                            accessibilityState={
+                              Object {
+                                "disabled": false,
+                              }
+                            }
                             accessible={true}
+                            collapsable={false}
                             focusable={true}
                             onClick={[Function]}
                             onResponderGrant={[Function]}
@@ -1243,7 +1286,13 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                             }
                           />
                           <View
+                            accessibilityState={
+                              Object {
+                                "disabled": false,
+                              }
+                            }
                             accessible={true}
+                            collapsable={false}
                             focusable={true}
                             onClick={[Function]}
                             onResponderGrant={[Function]}

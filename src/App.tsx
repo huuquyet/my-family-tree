@@ -1,16 +1,15 @@
+import React, { useEffect } from 'react';
 import * as SplashScreen from 'expo-splash-screen';
-
-import React, {useEffect} from 'react';
-
 import AppLoading from 'expo-app-loading';
-import Icons from './utils/Icons';
-import RootNavigator from './components/navigations/RootStack';
-import RootProvider from './providers';
-import {gestureHandlerRootHOC} from 'react-native-gesture-handler';
-import {useAssets} from 'expo-asset';
-import {useFonts} from 'expo-font';
+import { useAssets } from 'expo-asset';
+import { useFonts } from 'expo-font';
+import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
 
-SplashScreen.preventAutoHideAsync();
+import RootProvider from './providers';
+import RootNavigator from './components/navigations/RootStack';
+import Icons from './utils/Icons';
+
+SplashScreen.preventAutoHideAsync().then();
 
 function App(): React.ReactElement {
   const [fontsLoaded] = useFonts({
@@ -21,7 +20,7 @@ function App(): React.ReactElement {
 
   useEffect(() => {
     if (assets && fontsLoaded) {
-      SplashScreen.hideAsync();
+      SplashScreen.hideAsync().then();
     }
   }, [assets, fontsLoaded]);
 

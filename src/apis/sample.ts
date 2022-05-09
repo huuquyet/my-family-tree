@@ -19,9 +19,7 @@ export const sample = async (
   };
 
   try {
-    const res: Response = await fetch(`${ROOT_URL}`, fetchOption);
-
-    return res;
+    return await fetch(`${ROOT_URL}`, fetchOption);
   } catch (err) {
     throw new Error(err as string);
   }

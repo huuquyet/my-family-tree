@@ -1,20 +1,20 @@
-import {Button, useTheme} from 'dooboo-ui';
-import {Image, View} from 'react-native';
-
-import {IC_MASK} from '../../utils/Icons';
-import IntroView from '../uis/IntroTemp';
 import React from 'react';
-import {RootStackNavigationProps} from '../navigations/RootStack';
-import {User} from '../../types';
-import {getString} from '../../../STRINGS';
+import { Image, View } from 'react-native';
 import styled from '@emotion/native';
-import {useAppContext} from '../../providers/AppProvider';
+import { Button, useTheme } from 'dooboo-ui';
+
+import IntroView from '../uis/IntroTemp';
+import { useAppContext } from '../../providers/AppProvider';
+import { RootStackNavigationProps } from '../navigations/RootStack';
+import { IC_MASK } from '../../utils/Icons';
+import { User } from '../../types';
+import { getString } from '../../../STRINGS';
 
 const Container = styled.View`
   flex: 1;
   align-self: stretch;
   overflow: scroll;
-  background-color: ${({theme}) => theme.background};
+  background-color: ${({ theme }) => theme.background};
 
   flex-direction: column;
   justify-content: flex-start;
@@ -37,9 +37,9 @@ interface Props {
 function Intro(props: Props): React.ReactElement {
   let timer: any;
 
-  const {setUser} = useAppContext();
+  const { setUser } = useAppContext();
 
-  const {changeThemeType} = useTheme();
+  const { changeThemeType } = useTheme();
   const [isLoggingIn, setIsLoggingIn] = React.useState<boolean>(false);
 
   const onLogin = (): void => {
@@ -79,7 +79,7 @@ function Intro(props: Props): React.ReactElement {
           onPress={(): void => onLogin()}
           text={getString('LOGIN')}
         />
-        <View style={{marginTop: 12}} />
+        <View style={{ marginTop: 12 }} />
         <Button
           testID="btn-navigate"
           onPress={(): void =>
@@ -87,9 +87,9 @@ function Intro(props: Props): React.ReactElement {
               param: 'GO BACK',
             })
           }
-          text={getString('NAVIGATE', {name: 'Temp'})}
+          text={getString('NAVIGATE', { name: 'Temp' })}
         />
-        <View style={{marginTop: 12}} />
+        <View style={{ marginTop: 12 }} />
         <Button
           testID="btn-theme"
           onPress={(): void => changeThemeType()}

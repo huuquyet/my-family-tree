@@ -1,4 +1,4 @@
-import {useReducer} from 'react';
+import React, { useReducer } from 'react';
 
 import createCtx from '../utils/createCtx';
 
@@ -76,7 +76,7 @@ function MyProvider(props: Props): React.ReactElement {
     setUser: setUser(dispatch),
   };
 
-  return <Provider value={{state, ...actions}}>{props.children}</Provider>;
+  return <Provider value={{ state, ...actions }}>{props.children}</Provider>;
 }
 
-export {useCtx as useReducerContext, MyProvider};
+export { useCtx as useReducerContext, MyProvider };

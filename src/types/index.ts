@@ -1,6 +1,5 @@
-import {StyleProp, TextStyle} from 'react-native';
-
-import {SFC} from 'react';
+import { FC } from 'react';
+import { StyleProp, TextStyle } from 'react-native';
 
 export interface User {
   displayName: string;
@@ -15,4 +14,18 @@ interface IconProps {
   children?: never;
 }
 
-export type IconType = SFC<IconProps>;
+export type IconType = FC<IconProps>;
+
+export type BottomTabParamList = {
+  default: undefined;
+};
+
+export type DrawerParamList = {
+  default: undefined;
+};
+
+export type RootStackParamList = {
+  default: undefined;
+  Intro: undefined;
+  Temp: { param: string };
+};

@@ -1,13 +1,15 @@
+import React from 'react';
 import 'react-native';
-
-import * as React from 'react';
-
-import {RenderAPI, act, fireEvent, render} from '@testing-library/react-native';
-
-import {Button} from 'dooboo-ui';
-import {createTestElement} from '../../../../test/testUtils';
-// Note: test renderer must be required after react-native.
+import { Button } from 'dooboo-ui';
 import renderer from 'react-test-renderer';
+import {
+  act,
+  fireEvent,
+  render,
+  RenderAPI,
+} from '@testing-library/react-native';
+
+import { createTestElement } from '../../../../test/testUtils';
 
 let props: any;
 let component: React.ReactElement;

@@ -4,5 +4,7 @@ module.exports = {
   arrowParens: "always",
   singleQuote: true,
   jsxSingleQuote: false,
-  bracketSpacing: false,
+  bracketSpacing: true,
+  bracketSameLine: true,
+  tabWidth: 2,
 };

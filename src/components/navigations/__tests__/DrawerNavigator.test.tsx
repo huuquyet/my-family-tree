@@ -1,11 +1,10 @@
+import { ReactElement } from 'react';
 import 'react-native';
-
-import {RenderAPI, cleanup, render} from '@testing-library/react-native';
-import {createTestElement, createTestProps} from '../../../../test/testUtils';
+import { NavigationContainer } from '@react-navigation/native';
+import { RenderAPI, cleanup, render } from '@testing-library/react-native';
 
 import DrawerNavigator from '../DrawerNavigator';
-import {NavigationContainer} from '@react-navigation/native';
-import {ReactElement} from 'react';
+import { createTestElement, createTestProps } from '../../../../test/testUtils';
 
 let props: any;
 let component: ReactElement;

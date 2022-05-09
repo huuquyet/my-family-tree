@@ -1,5 +1,5 @@
-import {ReactElement} from 'react';
-import {useMediaQuery} from 'react-responsive';
+import { ReactElement } from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 export type MediaQueryType = {
   isTablet: boolean;
@@ -7,8 +7,8 @@ export type MediaQueryType = {
 };
 
 export const useMedia = (): MediaQueryType => {
-  const isTablet = useMediaQuery({minWidth: 768});
-  const isDesktop = useMediaQuery({minWidth: 992});
+  const isTablet = useMediaQuery({ minWidth: 768 });
+  const isDesktop = useMediaQuery({ minWidth: 992 });
 
   return {
     isTablet,
@@ -16,20 +16,20 @@ export const useMedia = (): MediaQueryType => {
   };
 };
 
-export const Desktop = ({children}): ReactElement => {
-  const isDesktop = useMediaQuery({minWidth: 992});
+export const Desktop = ({ children }): ReactElement => {
+  const isDesktop = useMediaQuery({ minWidth: 992 });
 
   return isDesktop ? children : null;
 };
 
-export const Tablet = ({children}): ReactElement => {
-  const isTablet = useMediaQuery({minWidth: 768});
+export const Tablet = ({ children }): ReactElement => {
+  const isTablet = useMediaQuery({ minWidth: 768 });
 
   return isTablet ? children : null;
 };
 
-export const Mobile = ({children}): ReactElement => {
-  const isMobile = useMediaQuery({maxWidth: 767});
+export const Mobile = ({ children }): ReactElement => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return isMobile ? children : null;
 };

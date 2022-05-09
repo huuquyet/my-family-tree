@@ -1,7 +1,7 @@
-import {ThemeProvider, ThemeType} from 'dooboo-ui';
-
-import {AppProvider} from './AppProvider';
 import React from 'react';
+import { ThemeProvider, ThemeType } from 'dooboo-ui';
+
+import { AppProvider } from './AppProvider';
 
 interface Props {
   initialThemeType?: ThemeType;
